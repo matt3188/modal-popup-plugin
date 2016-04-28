@@ -8,6 +8,9 @@
     this.modal = null;
     this.overlay = null;
 
+    // Determine proper prefix
+    this.transitionEnd = transitionSelect();
+
     // Define option defaults
     var defaults = {
       className: 'fade-and-drop',
@@ -52,8 +55,10 @@
     this.overlay.className = this.overlay.className.replace(' modal-open', '');
 
     // Listen for CSS transitionend event and then remove the nodes from the DOM
+    this.modal.addEventListener( this.transitionEnd, function() {
       _.modal.parentNode.removeChild(_.modal);
     });
+    this.overlay.addEventListener( this.transitionEnd, function() {
       if( _.overlay.parentNode ) _.overlay.parentNode.removeChild( _.overlay );
     });
   };
