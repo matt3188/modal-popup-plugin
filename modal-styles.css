@@ -152,3 +152,7 @@
      -o-transition: 500ms opacity 500ms ease;
       transition: 500ms opacity 500ms ease;
 }
+
+#content {
+  display: none;
+}
