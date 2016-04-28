@@ -26,7 +26,8 @@
 
   // Public Methods
   Modal.prototype.open = function() {
-    // body...
+    //build out the modal
+    buildOut.call( this );
   };
 
   // Private Methods
