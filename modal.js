@@ -117,4 +117,13 @@
       this.overlay.addEventListener( 'click', this.close.bind( this ));
     }
   }
+
+  // Utility method to determine which transistionend event is supported
+  function transitionSelect() {
+    var el = document.createElement("div");
+    if (el.style.WebkitTransition) return "webkitTransitionEnd";
+    if (el.style.OTransition) return "oTransitionEnd";
+    return 'transitionend';
+  }
+
 })();
