@@ -19,4 +19,20 @@ This plugin should:
 ##Road map
 - Add the ability to close modal with `ESC` key
 - Add library of animations that can be added to the popup
-- 
+
+## Usage
+
+```javascript
+var myModal = new Modal({
+  
+  // Can be a string or reference an ID
+  content: myContent,
+
+  // Defaults
+  className: 'fade-and-drop',
+  closeButton: true,
+  maxWidth: 600,
+  minWidth: 280,
+  overlay: true
+});
+```
