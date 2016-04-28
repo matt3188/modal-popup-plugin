@@ -12,9 +12,9 @@
 
   -webkit-transition: 1ms opacity ease;
      -moz-transition: 1ms opacity ease;
-    -ms-transition: 1ms opacity ease;
-     -o-transition: 1ms opacity ease;
-      transition: 1ms opacity ease;
+      -ms-transition: 1ms opacity ease;
+       -o-transition: 1ms opacity ease;
+          transition: 1ms opacity ease;
 
   background: rgba(0,0,0,.6);
 }
@@ -32,15 +32,15 @@
 
   -webkit-transition: 1ms opacity ease;
      -moz-transition: 1ms opacity ease;
-    -ms-transition: 1ms opacity ease;
-     -o-transition: 1ms opacity ease;
-      transition: 1ms opacity ease;
+      -ms-transition: 1ms opacity ease;
+       -o-transition: 1ms opacity ease;
+          transition: 1ms opacity ease;
 
   -webkit-transform: translate(-50%, -50%);
      -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-     -o-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 
   border-radius: 2px;
   background: #fff;
@@ -51,9 +51,9 @@
 
   -webkit-transform: translate(-50%, 0);
      -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-     -o-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+       -o-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
 }
 
 .custom-modal.modal-open {
@@ -111,28 +111,28 @@
 
   -webkit-transition: 500ms top 500ms ease;
      -moz-transition: 500ms top 500ms ease;
-    -ms-transition: 500ms top 500ms ease;
-     -o-transition: 500ms top 500ms ease;
-      transition: 500ms top 500ms ease;
+      -ms-transition: 500ms top 500ms ease;
+       -o-transition: 500ms top 500ms ease;
+          transition: 500ms top 500ms ease;
 }
 
 .custom-modal.fade-and-drop.modal-open.modal-anchored {
 
   -webkit-transition: 500ms top 500ms ease;
      -moz-transition: 500ms top 500ms ease;
-    -ms-transition: 500ms top 500ms ease;
-     -o-transition: 500ms top 500ms ease;
-      transition: 500ms top 500ms ease;
-}
+      -ms-transition: 500ms top 500ms ease;
+       -o-transition: 500ms top 500ms ease;
+          transition: 500ms top 500ms ease;
+  }
 
 .modal-overlay.fade-and-drop.modal-open {
   top: 0;
 
   -webkit-transition: 500ms opacity ease;
      -moz-transition: 500ms opacity ease;
-    -ms-transition: 500ms opacity ease;
-     -o-transition: 500ms opacity ease;
-      transition: 500ms opacity ease;
+      -ms-transition: 500ms opacity ease;
+       -o-transition: 500ms opacity ease;
+          transition: 500ms opacity ease;
 
   opacity: 1;
 }
@@ -140,17 +140,17 @@
 .custom-modal.fade-and-drop {
   -webkit-transition: 500ms top ease;
      -moz-transition: 500ms top ease;
-    -ms-transition: 500ms top ease;
-     -o-transition: 500ms top ease;
-      transition: 500ms top ease;
+      -ms-transition: 500ms top ease;
+       -o-transition: 500ms top ease;
+          transition: 500ms top ease;
 }
 
 .modal-overlay.fade-and-drop {
   -webkit-transition: 500ms opacity 500ms ease;
      -moz-transition: 500ms opacity 500ms ease;
-    -ms-transition: 500ms opacity 500ms ease;
-     -o-transition: 500ms opacity 500ms ease;
-      transition: 500ms opacity 500ms ease;
+      -ms-transition: 500ms opacity 500ms ease;
+       -o-transition: 500ms opacity 500ms ease;
+          transition: 500ms opacity 500ms ease;
 }
 
 #content {
