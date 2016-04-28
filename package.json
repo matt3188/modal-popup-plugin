@@ -1,0 +1,24 @@
+{
+  "name": "modal-popup-plugin",
+  "version": "1.0.0",
+  "description": "modal popup plugin",
+  "main": "src/modal.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt3188/modal-popup-plugin.git"
+  },
+  "keywords": [
+    "modal",
+    "popup",
+    "js"
+  ],
+  "author": "Matt Coleman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matt3188/modal-popup-plugin/issues"
+  },
+  "homepage": "https://github.com/matt3188/modal-popup-plugin#readme"
+}
