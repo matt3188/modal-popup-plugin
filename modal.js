@@ -28,6 +28,10 @@
   Modal.prototype.open = function() {
     //build out the modal
     buildOut.call( this );
+
+    // Initialise modal event listeners
+    initEvents.call( this );
+
   };
 
   // Private Methods
