@@ -47,18 +47,13 @@
     // Store the value of this
     var _ = this;
 
-    // Determine proper prefix
-    this.transitionEnd = transitionSelect();
-
     // Remove the open class name
     this.modal.className = this.modal.className.replace(' modal-open', '');
     this.overlay.className = this.overlay.className.replace(' modal-open', '');
 
     // Listen for CSS transitionend event and then remove the nodes from the DOM
-    this.modal.addEventListener( this.transitionend, function() {
       _.modal.parentNode.removeChild(_.modal);
     });
-    this.overlay.addEventListener( this.transitionend, function() {
       if( _.overlay.parentNode ) _.overlay.parentNode.removeChild( _.overlay );
     });
   };
