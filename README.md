@@ -17,8 +17,10 @@ This plugin should:
 - If the modal’s height exceeds the viewport’s height, also add a `modal-anchored` class so that we can handle that scenario
 
 ##Road map
+
 - Add the ability to close modal with `ESC` key
 - Add library of animations that can be added to the popup
+- Be able to customise close button
 
 ## Usage
 
