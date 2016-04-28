@@ -15,3 +15,6 @@ This plugin should:
 - When opened, add a `scotch-open` class that we can use with our CSS to define an open state.
 - When closed, remove the `scotch-open` class.
 - If the modal’s height exceeds the viewport’s height, also add a `scotch-anchored` class so that we can handle that scenario
+
+##Road map
+- Add the ability to close modal with `ESC` key
