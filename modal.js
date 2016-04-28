@@ -93,4 +93,14 @@
     document.body.appendChild( docFrag );
   }
 
+  function initEvents() {
+
+    if ( this.closeButton ) {
+      this.closeButton.addEventListener( 'click', this.close.bind( this ));
+    }
+
+    if ( this.overlay ) {
+      this.overlay.addEventListener( 'click', this.close.bind( this ));
+    }
+  }
 })();
