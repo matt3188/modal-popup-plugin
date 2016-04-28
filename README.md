@@ -36,3 +36,13 @@ var myModal = new Modal({
   overlay: true
 });
 ```
+
+## Settings
+
+Option | Type | Default | Description
+------ | ---- | ------- | -----------
+className | string | 'fade-and-drop' | Adds animation class
+closeButton | boolean | true | Turns close button on/off
+maxWidth | int | 600 | Sets max width of modal
+minWidth | int | 280 | Sets min width of modal
+overlay | boolean | true | Turns overlay on/off
