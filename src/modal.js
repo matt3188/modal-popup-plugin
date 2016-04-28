@@ -22,7 +22,7 @@
     };
 
     // Create options by extending defaults with the passed argument
-    if (arguments[0] && typeof arguments[0] === "object") {
+    if (arguments[0] && typeof arguments[0] === 'object') {
       this.options = extendDefaults(defaults, arguments[0]);
     }
   };
@@ -51,8 +51,8 @@
     var _ = this;
 
     // Remove the open class name
-    this.modal.className = this.modal.className.replace(' modal-open', '');
-    this.overlay.className = this.overlay.className.replace(' modal-open', '');
+    this.modal.className = this.modal.className.replace( 'modal-open', '' );
+    this.overlay.className = this.overlay.className.replace( 'modal-open', '' );
 
     // Listen for CSS transitionend event and then remove the nodes from the DOM
     this.modal.addEventListener( this.transitionEnd, function() {
@@ -83,7 +83,7 @@
     // If content is an HTML string, append to the HTML string
     // If content is a domNode. append its content
     
-    if ( typeof this.options.content === "string" ) {
+    if ( typeof this.options.content === 'string' ) {
       content = this.options.content;
     } else {
       content = this.options.content.innerHTML;
@@ -139,8 +139,8 @@
 
   // Utility method to determine which transistionend event is supported
   function transitionSelect() {
-    var el = document.createElement("div");
-    if (el.style.WebkitTransition) return "webkitTransitionEnd";
+    var el = document.createElement( 'div' );
+    if ( el.style.WebkitTransition ) return 'webkitTransitionEnd';
     return 'transitionend';
   }
 
