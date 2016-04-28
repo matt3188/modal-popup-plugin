@@ -2,7 +2,7 @@
 
 Plugin to save rewriting modal popup code over and over.
 
-##CORE FUNCTIONALITY
+## Core functionality
 This plugin should:
 
 - Build a modal element and add it to the page
@@ -16,7 +16,7 @@ This plugin should:
 - When closed, remove the `modal-open` class.
 - If the modal’s height exceeds the viewport’s height, also add a `modal-anchored` class so that we can handle that scenario
 
-##Road map
+## Road map
 
 - Add the ability to close modal with `ESC` key
 - Add library of animations that can be added to the popup
