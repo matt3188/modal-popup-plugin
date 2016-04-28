@@ -32,6 +32,12 @@
     // Initialise modal event listeners
     initEvents.call( this );
 
+    // After adding elements to the DOM, use getComputedStyle
+    // to force the browser to recalc and recognize the elements
+    // that we just added. This is so that CSS animation has a start point
+    window.getComputedStyle( this.modal ).height;
+
+  };
   };
 
   // Private Methods
