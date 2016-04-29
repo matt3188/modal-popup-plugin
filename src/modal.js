@@ -42,7 +42,7 @@
 
     // Add our open class and check if the modal is taller than the window
     // If so, our anchored class is also applied
-    this.modal.className = this.modal.className + ( this.modal.offsetHeight > window.innerHeight ? ' modal-open modal-anchored' : ' modal-open');
+    this.modal.className = this.modal.className + ' ' + ( this.modal.offsetHeight > window.innerHeight ? 'modal-open modal-anchored' : 'modal-open');
     this.overlay.className = this.overlay.className + ' modal-open';
   };
 
