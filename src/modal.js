@@ -99,7 +99,7 @@
     this.modal.style.maxWidth = this.options.maxWidth + 'px';
 
     // If closeButton option is true, add a close button
-    if ( this.options.closeButton === true ) {
+    if ( this.options.closeButton ) {
       this.closeButton = document.createElement( 'button' );
       this.closeButton.className = 'btn close-btn';
       this.closeButton.innerHTML = 'x';
@@ -107,7 +107,7 @@
     }
 
     // If overlay is true, add one
-    if( this.options.overlay === true ) {
+    if( this.options.overlay ) {
       this.overlay = document.createElement( 'div' );
       this.overlay.className = 'modal-overlay ' + this.options.className;
       docFrag.appendChild( this.overlay );
