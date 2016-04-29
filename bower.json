@@ -1,0 +1,25 @@
+{
+  "name": "simple-modal",
+  "homepage": "https://github.com/matt3188/simple-modal",
+  "authors": [
+    "Matt Coleman <hello@matt-coleman.co.uk>"
+  ],
+  "description": "A simple modal popup plugin",
+  "main": "src/modal.js",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "modal",
+    "popup",
+    "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
