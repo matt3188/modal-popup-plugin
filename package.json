@@ -1,23 +1,23 @@
 {
-  "name": "modal-popup-plugin",
+  "name": "simple-modal",
   "version": "1.0.0",
-  "description": "modal popup plugin",
+  "description": "A simple modal popup plugin",
   "main": "src/modal.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matt3188/modal-popup-plugin.git"
+    "url": "git+https://github.com/matt3188/simple-modal.git"
   },
   "keywords": [
     "modal",
     "popup",
     "js"
   ],
-  "author": "Matt Coleman <matt.coleman@protonmail.com",
+  "author": "Matt Coleman <hello@matt-coleman.co.uk>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/matt3188/modal-popup-plugin/issues"
+    "url": "https://github.com/matt3188/simple-modal/issues"
   },
 }
