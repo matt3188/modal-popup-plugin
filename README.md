@@ -1,6 +1,6 @@
-# modal-popup-plugin
+# Simple Modal
 
-Plugin to save rewriting modal popup code over and over.
+A Javascript plugin to save rewriting modal popup code over and over.
 
 ## Core functionality
 This plugin should:
