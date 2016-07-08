@@ -5,7 +5,10 @@
     "Matt Coleman <hello@matt-coleman.co.uk>"
   ],
   "description": "A simple modal popup plugin",
-  "main": "src/modal.js",
+  "main": [
+    "src/modal.js",
+    "src/modal-styles.css"
+  ],
   "moduleType": [
     "globals"
   ],
