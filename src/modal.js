@@ -43,7 +43,9 @@
     // Add our open class and check if the modal is taller than the window
     // If so, our anchored class is also applied
     this.modal.className = this.modal.className + ' ' + ( this.modal.offsetHeight > window.innerHeight ? 'modal-open modal-anchored' : 'modal-open');
-    this.overlay.className = this.overlay.className + ' modal-open';
+    if ( this.options.overlay ) {
+      this.overlay.className = this.overlay.className + ' modal-open';
+    }
   };
 
   Modal.prototype.close = function() {
@@ -52,15 +54,19 @@
 
     // Remove the open class name
     this.modal.className = this.modal.className.replace( 'modal-open', '' );
-    this.overlay.className = this.overlay.className.replace( 'modal-open', '' );
+    if ( this.options.overlay ) {
+      this.overlay.className = this.overlay.className.replace( 'modal-open', '' );
+    }
 
     // Listen for CSS transitionend event and then remove the nodes from the DOM
     this.modal.addEventListener( this.transitionEnd, function() {
       _.modal.parentNode.removeChild(_.modal);
     });
-    this.overlay.addEventListener( this.transitionEnd, function() {
-      if( _.overlay.parentNode ) _.overlay.parentNode.removeChild( _.overlay );
-    });
+    if ( this.options.overlay ) {
+      this.overlay.addEventListener( this.transitionEnd, function() {
+        if ( _.overlay.parentNode ) _.overlay.parentNode.removeChild( _.overlay );
+      });
+    }
   };
 
   // Private Methods
@@ -82,7 +88,7 @@
 
     // If content is an HTML string, append to the HTML string
     // If content is a domNode. append its content
-    
+
     if ( typeof this.options.content === 'string' ) {
       content = this.options.content;
     } else {
@@ -107,7 +113,7 @@
     }
 
     // If overlay is true, add one
-    if( this.options.overlay ) {
+    if ( this.options.overlay ) {
       this.overlay = document.createElement( 'div' );
       this.overlay.className = 'modal-overlay ' + this.options.className;
       docFrag.appendChild( this.overlay );
