@@ -91,7 +91,7 @@
 
     if ( typeof this.options.content === 'string' ) {
       content = this.options.content;
-    } else {
+    } else if(this.options.content !== null) {
       content = this.options.content.innerHTML;
     }
 
